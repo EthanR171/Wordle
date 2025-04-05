@@ -1,0 +1,52 @@
+// gameservices.proto
+// E. Rivers 1015561 Sec C
+// March 25, 2025
+// Defines a simple service contract called DailyWordle for a gRPC service.
+// This service will allow for a client to submit unlimited guess requests and receive detailed responses.
+// Also will allow for user to retrieve stats for current daily word.
+syntax = "proto3";
+
+option csharp_namespace = "WordleGameServer.Protos";
+package wordlegameserver;
+
+service DailyWordle {
+	rpc Play(stream GuessRequest) returns (stream GuessResponse);
+	rpc GetStats(Empty) returns (Statistics);
+}
+
+message Empty {}
+
+message GuessRequest {
+	string word = 1;
+}
+
+message GuessResponse {
+	bool is_correct = 1;
+	bool is_game_over = 2;
+	repeated LetterResult results = 3;
+	repeated string unused_letters = 4;
+	repeated string included_letters = 5;
+    repeated string excluded_letters = 6;  
+}
+
+enum LetterStatus {
+	UNKNOWN = 0;
+	CORRECT_POS = 1;
+	WRONG_POS = 2;
+	NOT_IN_WORD = 3;
+}
+
+message LetterResult {
+	string letter = 1;
+	LetterStatus status = 2;
+}
+
+// Think of this as the "plate" that we are serving the client. 
+// The data we read from our json file will be converted to this.
+message Statistics {
+	int32 num_players = 1;
+	double winners_percentage = 2;
+	double average_guesses = 3;
+	map<int32, int32> winner_guess_distribution = 4; // <guesses> : <players> Tracks how many players guessed correctly in X guesses
+}
+

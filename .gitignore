@@ -1,0 +1,107 @@
+# Visual Studio specific files
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.cache
+*.ncb
+*.opendb
+*.VC.db
+*.VC.opendb
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Bb]uild/
+[Rr]elease/
+[Dd]ebug/
+[Tt]est[Rr]esult*/
+*.ilk
+*.pdb
+*.ipch
+*.iobj
+*.idb
+*.tlog
+*.log
+*.csproj.user
+*.csproj.vspscc
+*.vbproj.user
+*.vbproj.vspscc
+*.nupkg
+*.snupkg
+project.lock.json
+project.assets.json
+
+# NuGet Packages
+packages/
+*.nupkg
+*.snupkg
+.nuget/
+.nuget/packages/
+*.nuspec
+
+# Entity Framework
+**/Migrations/
+App_Data/
+
+# Rider / ReSharper
+.idea/
+*.sln.DotSettings
+resharper.xml
+resharper/
+
+# Azure Deployment
+.publishsettings
+*.azurePubxml
+
+# Code coverage
+*.coverage
+*.coveragexml
+*.coverageresults
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn.lock
+package-lock.json
+
+# Logs and Debugging
+*.tlog
+*.dmp
+*.mdf
+*.ldf
+*.psess
+*.vspx
+*.vspscc
+*.vspcc
+
+# Generated files
+Generated_Code/
+
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Configuration files
+appsettings*.json
+secrets.json
+*.launchsettings.json
+
+# Temporary Files
+~$*
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Office files and personal notes
+*.xlsx
+*.pdf
+
+# data files
+gamestats.json
