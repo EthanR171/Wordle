@@ -1,4 +1,4 @@
-# 📝 Wordle
+# 📝 Wordled
 
 A version of the game Wordle™ involving a pair of gRPC services and console client with a focus on distributed systems.
 
