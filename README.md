@@ -5,6 +5,7 @@ A version of the game Wordle™ involving a pair of gRPC services and console cl
 ## ✨ Technologies
 
 - `gRPC`
+- `Protobuf`
 - `C#`
 - `.NET 7.0`
 - `Visual Studio 2022`
