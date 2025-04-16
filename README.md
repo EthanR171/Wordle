@@ -25,7 +25,7 @@ This was a group project that I worked on during my 5th semester. The goal of th
 ## 🚦Running the Project
 
 1. `Clone` the repository
-2. Set project to use `multiple startup projects` and select all
+2. Set solution to use `multiple startup projects` and select all
 3. Utilize the client terminal to `play`
 
 
