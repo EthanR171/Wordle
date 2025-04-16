@@ -12,7 +12,7 @@ A version of the game Wordle™ involving a pair of gRPC services and console cl
 ## 🚀 Features
 
 - Incorporates a `Bi-Directional stream` for the Play RPC
-- Utilizes a `Mutex` do avoid potential `deadlock`. 
+- Utilizes a `Mutex` to avoid potential `deadlocks` for multiple users saving to stats file. 
 - Multi-Assembly application.
 - GameServer acts as both a `client` to WordServer, and `server` to GameClient
 - Saves daily user statistics to `json` file and resets on new day (see demo video).
