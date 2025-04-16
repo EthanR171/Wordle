@@ -2,15 +2,12 @@
 
 A version of the game Wordle™ involving a pair of gRPC services and console client with a focus on distributed systems.
 
----
-
 ## ✨ Technologies
 
 - `gRPC`
 - `C#`
 - `.NET 7.0`
-
----
+- `Visual Studio 2022`
 
 ## 🚀 Features
 
@@ -33,5 +30,6 @@ This was a group project that I worked on during my 5th semester. The goal of th
 
 ## 🎞️ Preview
 
-https://github.com/user-attachments/assets/b616c6a9-0b22-4927-8e70-8690d91719df
+https://github.com/user-attachments/assets/d2c775b4-2f66-4789-8ac1-f0845f20a7c6
+
 
